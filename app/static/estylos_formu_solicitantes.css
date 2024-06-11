@@ -1,0 +1,88 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(32, 32, 32);
+}
+.linea{
+    background-color: #B59171;
+    height: 1px;
+    color: #B59171;
+    width: 308px;
+    margin: 0px 0px 20px 0px;
+    border-color: #B59171;
+
+}
+.lado_izquierdo{
+    height: 100%;
+    width: 45%;
+    background-color: rgb(32, 32, 32);
+    align-items: start;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.lado_derecho{
+    height: 100vh;
+    width: 55%;
+    background-color: #272829;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+
+}
+
+h3{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    width: 308px;
+}
+#aprendiz{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+img{
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+
+}
+#contiene_inputs{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    text-align: center;
+    width: 300px;
+    font-size: 15px;
+    height: 50px;
+    outline: none;
+
+}
+
+button{
+    margin: 10px;
+    width: 308px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    margin-left: auto; 
+    margin-right: auto;
+    border: none;
+    background-color: #B59171;
+    color: aliceblue;
+}
+button:hover {
+    background-color: #2894ca;
+}

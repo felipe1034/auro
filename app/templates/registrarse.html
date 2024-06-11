@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Proyecto_Auro-main/app/static/estylos_formu_aprendiz.css">
+</head>
+<body>
+    
+    
+    <div class= "lado_izquierdo">
+<form action="/add_usuario" method="POST">
+    
+    
+        <h3>Registrarse</h3>
+        <hr class="linea">
+
+        <div id="contiene_inputs">
+        <input type="number" id="num_documento" name="num_documento" placeholder="dijita tu numero de documento" required>
+
+        <input type="text" id="nombre" name="nombre_usuario" placeholder="dijita tu nombre completo" required>
+
+        <input type="text" id="usuario" name="usuario_usuario" placeholder="dijita tu usuario" required>
+
+        <input type="number" id="telefono" name="telefono_usuario" placeholder="dijita tu telefono" required>
+
+        <input type="text" id="correo" name="correo_usuario" placeholder="dijita tu gmail" required>
+
+        <input type="password" id="contrasena" name="contrasena_usuario" placeholder="dijita tu contrasena" required>
+
+        <div class="form-group">
+            <select id="role" name="role" required>
+                <option value="">Seleccione un rol</option>
+                <option value="aprendiz">Aprendiz</option>
+                <option value="empresa">Empresa</option>
+                <option value="Administrador">Administrador</option>
+            </select>
+        </div> 
+
+        <button>Registrarse</button>
+    </div>
+    </div>  
+</form>
+
+
+
+
+</body>
+</html>

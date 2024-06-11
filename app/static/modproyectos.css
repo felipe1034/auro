@@ -1,0 +1,272 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgb(32, 32, 32);
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+    background-color: #272829;
+  }
+
+#logo{
+    text-decoration: none;
+    color: #ececec;
+    font-size: 30px;
+  }
+  
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+.nav-list:hover{
+    color: #B59171;
+  }
+.nav-list li a {
+    font-size: 23px;
+    text-decoration: none;
+    color: #ffffff;
+    padding-left: 50px;
+  }
+  
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+  }
+  
+@media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+  
+    .abrir-menu {
+        color: #fffefe;
+    }
+  
+    .cerrar-menu {
+        color: #ececec;
+    }
+  
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+  
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+  
+    .nav-list li a {
+        color: #ecececec;
+    }
+  }
+  
+#caja_padre{
+    display: flex;
+    height: 100%;
+    margin: 50px;
+    gap: 30px;
+
+}
+#contiene_lados_azquierda{
+    display: flex;
+    flex-direction: column;
+}
+#lado_izquierdo{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    gap: 40px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 30px;
+}
+
+#caja1_izquierda{
+    padding: 10px;
+    text-align: left;
+    background-color: white;
+    border-radius: 20px;
+}
+#caja1_izquierda,h1{
+    font-size: 25px;
+}
+#caja2_izquierda{
+    padding: 10px;
+    text-align: left;
+    background-color: white;
+    border-radius: 20px;
+}
+#categorias, ul, li{
+    list-style: none;
+    margin: 0 0 0 0;
+    padding: 5px 0 0 0;
+    font-size: 20px;
+}   
+input {
+    margin: 0px 10px 0 0;
+}
+.box{
+    border-bottom: #B59171;
+    color: #B59171;
+}
+#lado_izquierdo2{
+    width: 70%;
+    height: 100vh;
+    gap: 40px;
+    background-color: aliceblue;
+    border-radius: 30px;
+}
+#contenido{
+    background-color: rgba(219, 219, 219, 0.562);
+    height: 80%;
+    width: 95%;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+#lado_derecho3{
+    width: 5%;
+    gap: 40px;
+    background-color: aliceblue;
+    border-radius: 30px;
+}
+/* Estilos para el div de notificaciones */
+#notification-div {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#notification-div button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#request-permission-btn {
+    background-color: #007BFF;
+    color: white;
+}
+
+#request-permission-btn:hover {
+    background-color: #0056b3;
+}
+
+#show-notification-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#show-notification-btn:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #222;
+    color: #ddd;
+    padding: 40px 0;
+    font-size: 14px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px 0;
+}
+
+.footer-section h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer-section p, .footer-section a {
+    color: #bbb;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #B59171;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.socials a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.socials a img {
+    width: 30px;
+    height: 30px;
+}
+#email,#Phone, #location{
+    height: 30PX;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 50px;
+    background-color: #111;
+    color: #bbb;
+}
+
+.footer-bottom a {
+    color: #007bff;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}
+
+

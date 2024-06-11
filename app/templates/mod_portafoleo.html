@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='./portafoleo.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>formulario</title>
+</head>
+<body>
+
+    <!--header-->
+    <header>
+        <h1><a href="#" id="logo">Auro</a></h1>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="#">Busca trabajo</a></li>
+                <li><a href="#">Mis proyectos</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside id="lado_izquierdo">
+            <aside>
+                <div class="profile-pic">
+                    <img src="https://via.placeholder.com/150" alt="Imagen de Perfil" id="profileImage">
+                    <input type="file" id="imageUpload" accept="image/*">
+                    <label for="imageUpload">Cargar Imagen</label>
+                </div>
+                    <div id="contiene_img_redes">
+                    <img src="static/img/facebook_logo.webp" alt="">
+                    <img src="static/img/twiter logo.png" alt="">
+                    <img src="static/img/instragram logo.webp" alt="">
+                    <img src="static/img/in logo.png" alt="">
+                    </div>
+            
+                    <aside id="centro">
+                        <div id="contiene_circulos_img_centro">
+                        <img src="static/img/llamar.png" alt="" id = "imagen2">
+                            <h3>310 882 2037</h3>
+                        <img src="static/img/enviando.png" alt="" id="imagen3">
+                            <h3>dani@gmail.com</h3>
+                        <img src="static/img/portafolio.png" alt="" id="imagen4">
+                            <h3>Programacion</h3>
+                        </div>
+                    </aside>
+                </aside>
+                
+        </aside>
+        <article>
+            <h1 id="about">About</h1>
+        <aside id="cuadro">
+            <textarea id="descripcion" placeholder="text"></textarea>
+        </aside>
+        <aside>
+            <h1 id="skills">skills</h1>
+        </aside>
+
+        <div id="padre_todas_cajas">
+            <div id="contiene_dos_cajas1">
+        <aside id="web">
+            <textarea id="skill1" placeholder="your skill"></textarea>
+            <textarea id="descrip1" placeholder="text"></textarea>
+            <img src="static/img/codigo.png" alt="" id = "codigo">
+        </aside>
+        <aside id="photo">
+            <textarea id="skill2" placeholder="your skill"></textarea>
+            <textarea id="descrip2" placeholder="text"></textarea>
+            <img src="static/img/camara.png" alt="" id = "codigo">
+        </aside>
+    </div>
+    <div id="contiene_dos_cajas2">
+        <aside id="app">
+            <textarea id="skill3" placeholder="your skill"></textarea>
+            <textarea id="descrip3" placeholder="text"></textarea>
+            <img src="static/img/software-development.png" alt="" id = "codigo">
+        </aside>
+        <aside id="ui">
+            <textarea id="skill4" placeholder="your skill"></textarea>
+            <textarea id="descrip4" placeholder="text"></textarea>
+            <img src="static/img/perfil.png" alt="" id = "codigo">
+        </aside>
+    </div>
+    </div>
+        </article>
+    </main>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>Auro</h2>
+            <p>Somos una plataforma que conecta a los mejores talentos con las empresas líderes del mercado.</p>
+            <div class="socials">
+                <a href="#"><img src="../static/img/facebook_logo.webp" alt="Facebook"></a>
+                <a href="#"><img src="../static/img/twiter logo.png" alt="Twitter"></a>
+                <a href="#"><img src="../static/img/instragram logo.webp" alt="Instagram"></a>
+                <a href="#"><img src="../static/img/in logo.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <div class="footer-section links">
+            <h2>Enlaces Rápidos</h2>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Busca trabajo</a></li>
+                <li><a href="#">Mis proyectos</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contacto</h2>
+            <p><img src="../static/IMG/enviando.png" alt="Email" id="email"> info@auro.com</p>
+            <p><img src="../static/IMG/llamar.png" alt="Phone" id="Phone"> 310 882 2037</p>
+            <p><img src="../static/IMG/portafolio.png" alt="Location" id="location"> Calle 84, Bogota, Colombia</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Auro. Todos los derechos reservados. <a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+    </div>
+</body>
+<script src="../static/proyectos.js"></script>
+<script src="../static/js/menu.js"></script>
+</html>

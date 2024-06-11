@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estylosauro.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='./estylosauro.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body>
+   <header>
+      <h1>Auro</h1>
+      <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+      <nav class="nav" id="nav">
+          <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+          <ul class="nav-list">
+              <li><a href="registrarse.html">Registrarse</a></li>
+              <li><a href="login.html">Iniciar sesion </a></li>
+          </ul>
+      </nav>
+  </header>
+
+    
+    
+    <div class="abajo"> 
+      <div class="padre-de-abjo">
+         <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <div id="slides">
+           <div id="overflow">
+              <div class="inner">
+                 <div class="slide slide_1">
+                    <div class="slide-content">
+
+                       <div class="Mod_Aprendiz">
+                           <img src="../static/IMG/estudiante.png" alt="">
+                       </div>
+                    
+                    </div>
+                 </div>
+                 <div class="slide slide_2">
+                    <div class="slide-content">
+                           <div class="Mod_Aprendiz">
+                           <img src="../static/IMG/slide 3.png" alt="">
+                       </div>
+                    
+                    </div>
+                 </div>
+                 <div class="slide slide_3">
+                    <div class="slide-content">
+                     <div class="Mod_Aprendiz">
+                        <img src="../static/IMG/slide 2.png" alt="">
+                    </div>
+                    </div>
+                 </div>
+                 <div class="slide slide_4">
+                    <div class="slide-content">
+                     <div class="Mod_Aprendiz">
+                        <img src="../static/IMG/slide 4.png" alt="">
+                    </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div id="controls">
+           <label for="slide1"><img src="" alt=""></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+           <label for="slide1"></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+        </div>
+     </div>
+
+  
+     <div class="opciones">
+        <p><a href="mod_solicitante"><i class="fa fa-hospital-o" aria-hidden="true"><img src="../static/IMG/maleta.png" alt=""></i> Solicitante</a></p>
+        <p><a href="mod_aprendiz.html" ><i class="fa fa-user" aria-hidden="true"><img src="../static/IMG/sombrero-de-graduacion.png" alt=""></i>Aprendiz</p></a>
+        <p><a href="mod_portafoleo.html"><i class="fa fa-suitcase" aria-hidden="true"><img src="../static/IMG/editar.png" alt=""></i>Portafoleo</p></a>
+        <p><a href="mod_proyectos.html"><i class="fa fa-laptop" aria-hidden="true"><img src="../static/IMG/papel.png" alt=""></i>proyectos</p></a>
+     </div>
+      </div>
+        
+         <div class="img_central">
+            <img src="static/IMG/MY Huellita (3).png" alt="">
+         </div> 
+   </div>
+   <div class="footer-content">
+      <div class="footer-section about">
+          <h2>Auro</h2>
+          <p>Somos una plataforma que conecta a los mejores talentos con las empresas líderes del mercado.</p>
+          <div class="socials">
+              <a href="#"><img src="../static/img/facebook_logo.webp" alt="Facebook"></a>
+              <a href="#"><img src="../static/img/twiter logo.png" alt="Twitter"></a>
+              <a href="#"><img src="../static/img/instragram logo.webp" alt="Instagram"></a>
+              <a href="#"><img src="../static/img/in logo.png" alt="LinkedIn"></a>
+          </div>
+      </div>
+      <div class="footer-section links">
+          <h2>Enlaces Rápidos</h2>
+          <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Busca trabajo</a></li>
+              <li><a href="#">Mis proyectos</a></li>
+              <li><a href="#">Ayuda</a></li>
+              <li><a href="#">Contacto</a></li>
+          </ul>
+      </div>
+      <div class="footer-section contact">
+          <h2>Contacto</h2>
+          <p><img src="../static/IMG/enviando.png" alt="Email" id="email"> info@auro.com</p>
+          <p><img src="../static/IMG/llamar.png" alt="Phone" id="Phone"> 310 882 2037</p>
+          <p><img src="../static/IMG/portafolio.png" alt="Location" id="location"> Calle 84, Bogota, Colombia</p>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 Auro. Todos los derechos reservados. <a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+  </div>
+<script src="../static/js/menu.js"></script>
+</body>
+</html>
